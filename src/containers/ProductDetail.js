@@ -21,6 +21,7 @@ const ProductDetail=()=>{
         return()=>{
             dispatch(removeselectedProduct())
         }
+        // eslint-disable-next-line
     },[productId])
     return(
         <div className="ui grid container">
@@ -32,7 +33,7 @@ const ProductDetail=()=>{
               <div className="ui vertical divider">AND</div>
               <div className="middle aligned row">
                 <div className="column lp">
-                  <img className="ui fluid image" src={image} />
+                  <img className="ui fluid image" src={image} alt={title}/>
                 </div>
                 <div className="column rp">
                   <h1>{title}</h1>
