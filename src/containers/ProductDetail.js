@@ -9,7 +9,7 @@ const ProductDetail=()=>{
     const {productId}=useParams();
     const dispatch=useDispatch();
     const fetchProductDetail=async()=>{
-        const response=await axios.get(`http://fakestoreapi.com/products/${productId}`)
+        const response=await axios.get(`https://fakestoreapi.com/products/${productId}`)
         .catch(err=>{
         console.log("err",err)
         })
